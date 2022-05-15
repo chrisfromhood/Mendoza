@@ -577,6 +577,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 400px;
 }
 
+.max-w-\[290px\] {
+  max-width: 290px;
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -601,6 +605,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.25rem;
 }
 
+.rounded-\[50\%\] {
+  border-radius: 50%;
+}
+
 .border-\[5px\] {
   border-width: 5px;
 }
@@ -613,6 +621,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#F4F2F2\] {
   --tw-bg-opacity: 1;
   background-color: rgb(244 242 242 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#CA7353\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 115 83 / var(--tw-bg-opacity));
 }
 
 .bg-usa-map {
@@ -634,6 +647,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-9 {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .pb-10 {
@@ -731,6 +759,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 100;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .leading-\[23px\] {
   line-height: 23px;
 }
@@ -753,4 +785,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#0F0508\] {
   --tw-text-opacity: 1;
   color: rgb(15 5 8 / var(--tw-text-opacity));
+}
+
+.text-\[\#FFF\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
