@@ -510,6 +510,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.mr-\[39px\] {
+  margin-right: 39px;
+}
+
+.mr-\[46px\] {
+  margin-right: 46px;
+}
+
 .inline {
   display: inline;
 }
@@ -604,6 +612,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-around {
   justify-content: space-around;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded {
@@ -760,6 +772,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-\[56px\] {
   padding-bottom: 56px;
+}
+
+.pr-\[14px\] {
+  padding-right: 14px;
+}
+
+.pr-\[39px\] {
+  padding-right: 39px;
 }
 
 .text-left {
