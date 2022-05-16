@@ -6,6 +6,9 @@ module.exports = {
     },
     fontFamily: {
       baskervville: ['Baskervville', 'sans-serif'],
+      helvetica: ['helvetica', 'sans-serif'],
+      helveticaThin: ['helveticaThin', 'sans-serif'],
+      helveticaBold: ['helveticaBold', 'sans-serif'],
     },
     extend: {},
   },

@@ -9,6 +9,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
 </head>
+<style>
+  @font-face {
+    font-family: helvetica;
+    src: url(../fonts/HelveticaNeue\ Medium.ttf);
+    font-weight: medium;
+  }
+
+  @font-face {
+    font-family: helveticaThin;
+    src: url(../fonts/HelveticaNeue\ Thin.ttf);
+    font-weight: thin;
+  }
+
+  @font-face {
+    font-family: helveticaBold;
+    src: url(../fonts/HelveticaNeue\ Bold.ttf);
+    font-weight: bold;
+  }
+</style>
 
 <body>
   <!--SECTION CONTACTS -->
@@ -16,10 +35,12 @@
     <!--SECTION CONTACTS -- TITLE -->
     <h2 class="font-baskervville font-normal text-6xl text-center text-[#CA7353]">The Mendoza Law Firm
     </h2>
-    <h3 class="font-light text-center text-[40px] text-[#0F0508] leading-[45px] pt-3 py-0">Los abogados con resultados
+    <h3 class="font-thin font-helvetica text-center text-[40px] text-[#0F0508] leading-[45px] pt-3 py-0">Los
+      abogados
+      con resultados
       favorables en casos “imposibles”</h3>
     <!--!--SECTION CONTACTS -- CARDS -->
-    <div class="flex justify-between mx-auto flex-wrap pt-24">
+    <div class="flex justify-between mx-auto flex-wrap pt-24  font-helvetica">
       <!--CARD BOX--INTERNET-->
       <div class="bg-[#F4F2F2] max-w-[400px] pt-14 pl-6 pr-8 pb-8 relative">
         <img class="h-[86px] w-[86px] absolute top-[-13%] left-[38%]" src="../img/contacts/website.svg"
@@ -27,7 +48,8 @@
         <h3 class="font-thin text-center text-[40px] text-[#0F0508] leading-[45px] pb-8">En Internet</h3>
         <div class="pb-10">
           <span class="text-[25px] leading-[29px] text-[#0F0508]">Email:</span>
-          <span class="font-bold text-[25px] leading-[29px] text-[#0F0508]">abogada@mendozafirm.com</span>
+          <span
+            class="font-bold font-helveticaBold text-[25px] leading-[29px] text-[#0F0508]">abogada@mendozafirm.com</span>
         </div>
         <div>
           <span class="text-[25px] leading-[29px] text-[#0F0508] ">Medios Sociales:</span>
@@ -38,7 +60,7 @@
         </div>
       </div>
       <!--CARD BOX-- MOBILE-->
-      <div class="bg-[#F4F2F2] max-w-[400px] pt-14 pb-8 relative">
+      <div class="bg-[#F4F2F2] max-w-[400px] w-full pt-14 pb-8 relative">
         <img class="h-[86px] w-[86px] absolute top-[-13%] left-[38%]" src="../img/contacts/phone.svg"
           alt="Website icon">
         <h3 class="font-thin text-center text-[40px] text-[#0F0508] leading-[45px] pb-8">Teléfono</h3>
@@ -46,18 +68,19 @@
           <div class="pb-10">
             <span class="text-[25px] leading-[29px] text-[#0F0508]">Local:</span>
             <br>
-            <span class="font-bold text-[25px] leading-[29px] text-[#0F0508]">+1 (202) 933-3379</span>
+            <span class="font-bold font-helveticaBold text-[25px] leading-[29px] text-[#0F0508]">+1 (202)
+              933-3379</span>
           </div>
           <div class="pb-[38px]">
             <span class="text-[25px] leading-[29px] text-[#0F0508]">Toll Free:</span>
             <br>
-            <span class="font-bold text-[25px] leading-[29px] text-[#0F0508]">(800) 000-0000</span>
+            <span class="font-bold font-helveticaBold text-[25px] leading-[29px] text-[#0F0508]">(800) 000-0000</span>
           </div>
         </div>
 
       </div>
       <!--CARD BOX-- LOCATION-->
-      <div class="bg-[#F4F2F2] max-w-[400px] pt-14 pb-8 relative">
+      <div class="bg-[#F4F2F2] max-w-[400px] w-full pt-14 pb-8 relative">
         <img class="h-[86px] w-[86px] absolute top-[-13%] left-[38%]" src="../img/contacts/location-pin.svg"
           alt="Website icon">
         <h3 class="font-thin text-center text-[40px] text-[#0F0508] leading-[45px] pb-8 pr-10">Ubicación</h3>
@@ -125,7 +148,7 @@
       </div>
     </div>
     <!--SECTION TESTIMONIALS -->
-    <div class="max-w-[1412px] w-full my-0 mx-auto pb-16 pt-32">
+    <div class="max-w-[1412px] w-full my-0 mx-auto pb-16 pt-32 font-helveticaThin">
       <div class="flex justify-between mx-auto flex-wrap">
         <!--TESTIMONIAL BOX-->
         <div class="bg-[#F4F2F2] max-w-[400px] relative">
@@ -171,7 +194,7 @@
         </div>
       </div>
       <!--CALL TO ACTION BUTTON-->
-      <div class="py-7 w-full my-0 flex items-center justify-around">
+      <div class="py-7 w-full my-0 flex items-center justify-around font-helveticaBold">
         <a class="bg-[#CA7353] inline py-5 px-10 text-center text-[#FFF] font-bold text-xl leading-[23px] min-w-[212px] h-[60px] rounded-full hover:bg-[#CC4A1A]"
           href="#cta">+
           Ver más
