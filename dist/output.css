@@ -906,6 +906,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (max-width: 1312px) {
+  .lg\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
+
 @media (max-width: 904px) {
   .md\:my-12 {
     margin-top: 3rem;
