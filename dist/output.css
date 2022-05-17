@@ -558,6 +558,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 60px;
 }
 
+.h-\[726px\] {
+  height: 726px;
+}
+
+.h-\[150px\] {
+  height: 150px;
+}
+
 .max-h-\[361px\] {
   max-height: 361px;
 }
@@ -602,6 +610,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 1920px;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -622,8 +634,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-around;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded {
@@ -656,6 +676,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#CA7353\] {
   --tw-bg-opacity: 1;
   background-color: rgb(202 115 83 / var(--tw-bg-opacity));
+}
+
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F7F7F7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
 }
 
 .bg-usa-map {
@@ -755,22 +785,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 3.5rem;
 }
 
-.pt-\[144px\] {
-  padding-top: 144px;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pr-5 {
-  padding-right: 1.25rem;
-}
-
 .pt-44 {
   padding-top: 11rem;
 }
@@ -793,6 +807,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-\[56px\] {
   padding-bottom: 56px;
+}
+
+.pl-\[14px\] {
+  padding-left: 14px;
+}
+
+.pr-\[98px\] {
+  padding-right: 98px;
 }
 
 .text-left {
@@ -832,11 +854,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 25px;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -874,11 +891,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#0F0508\] {
   --tw-text-opacity: 1;
   color: rgb(15 5 8 / var(--tw-text-opacity));
-}
-
-.text-\[\#F238EB\] {
-  --tw-text-opacity: 1;
-  color: rgb(242 56 235 / var(--tw-text-opacity));
 }
 
 .text-\[\#FFF\] {
