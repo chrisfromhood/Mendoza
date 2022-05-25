@@ -13,26 +13,14 @@ module.exports = {
 
     extend: {},
     screens: {
-      'xl': { 'max': '1336px' },
-      // => @media (max-width: 1320px) { ... }
+      'sm': { 'min': '360px' },
+      // => @media (min-width: 640px and max-width: 767px) { ... }
 
-      'lg': { 'max': '1312px' },
-      // => @media (max-width: 1200px) { ... }
+      'md': { 'min': '700px' },
+      // => @media (min-width: 768px and max-width: 1023px) { ... }
 
-      'md': { 'max': '904px' },
-      // => @media (max-width: 944px) { ... }
-
-      'tablet': { 'max': '850px' },
-      // => @media (max-width: 850px) { ... }
-
-      'ipad': { 'max': '704px' },
-      // => @media (max-width: 704px) { ... }
-
-      'sm': { 'max': '639px' },
-      // => @media (max-width: 639px) { ... }
-
-      'mob': { 'max': '544px' },
-      // => @media (max-width: 544px) { ... }
+      'lg': { 'min': '1024px', 'max': '1459px' },
+      // => @media (min-width: 1024px and max-width: 1279px) { ... }
     }
   },
   plugins: [],
