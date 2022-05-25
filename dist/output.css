@@ -944,12 +944,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 5rem;
   }
 
+  .lg\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .lg\:max-h-\[267px\] {
     max-height: 267px;
   }
 
   .lg\:max-h-\[51px\] {
     max-height: 51px;
+  }
+
+  .lg\:w-\[247px\] {
+    width: 247px;
   }
 
   .lg\:max-w-\[275\] {
@@ -964,9 +972,38 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 51px;
   }
 
+  .lg\:max-w-\[275px\] {
+    max-width: 275px;
+  }
+
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .lg\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .lg\:pt-12 {
