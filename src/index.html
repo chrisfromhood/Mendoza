@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+  <link href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css" rel="stylesheet">
+
   <script src="../js/script.js" type="module"></script>
 </head>
 <style>
@@ -29,24 +31,36 @@
     src: url(../fonts/Helvetica\ Neu\ Bold.ttf);
     font-weight: bold;
   }
+
+  /* .glide__bullet {
+    height: 8px;
+    width: 37px;
+    background: #AAA9A9;
+  } */
 </style>
 
 <body>
   <!--SECTION MOVING TEXT -->
-  <div id="marqueeText" class="overflow-x-hidden whitespace-nowrap">
-    <div class="w-full bg-[#F7F7F7] pl-[14px] pr-[98px] h-[150px] flex items-center justify-between flex-row">
-      <img src="../img/moving-bar/American_Immigration_Lawyers_Association_Logo.svg" alt="Logo 1">
-      <p class="text-left font-thin text-xl leading-[23px] text-[#0F0508]">
-        Abogada de confianza apoyada por el American Immigration Lawyers Association
-      </p>
-      <img src="../img/moving-bar/Logo_Univision.svg" alt="Logo 2">
-      <p class="text-left font-thin text-xl leading-[23px] text-[#0F0508]">
-        Destacada en Univision
-      </p>
-      <img src="../img/moving-bar/facebook.svg" alt="Logo 3">
-      <p class="text-left font-thin text-xl leading-[23px] text-[#0F0508]">
-        Viva en Facebook live Lunes a Jueves a las 5pm EST
-      </p>
+  <div class="bg-darkGray w-full max-w-[1920px] mx-auto overflow-hidden whitespace-nowrap" id="marqueeText">
+    <div class="flex flex-row items-center justify-between h-36">
+      <div class="flex items-center">
+        <img class="grayscale ml-7 mr-5" src="../img/moving-bar/American_Immigration_Lawyers_Association_Logo.svg"
+          alt="Statue Of Liberty" />
+        <p class="text-left font-thin text-xl leading-[23px] text-[#0F0508]">
+          Abogada de confianza apoyada por el American Immigration Lawyers
+          Association
+        </p>
+      </div>
+      <div class="flex items-center mr-20">
+        <img class="grayscale" src="../img/moving-bar/Logo_Univision.svg" alt="Logo Unvision" />
+        <p class="text-left font-thin text-xl leading-[23px] text-[#0F0508]">Destacada en Univision</p>
+      </div>
+      <div class="flex items-center">
+        <img class="grayscale mr-5" src="../img/moving-bar/facebook.svg" alt="Facebook" />
+        <p class="text-left font-thin text-xl leading-[23px] text-[#0F0508] mr-24">
+          Viva en Facebook live Lunes a Jueves a las 5pm EST
+        </p>
+      </div>
     </div>
   </div>
 
@@ -64,7 +78,8 @@
       con resultados
       favorables en casos “imposibles”</h3>
     <!--!--SECTION CONTACTS -- CARDS -->
-    <div class="flex justify-between mx-auto flex-wrap pt-24 font-helvetica lg:px">
+    <div
+      class="flex justify-between mx-auto flex-wrap pt-24 font-helvetica md:flex-col md:items-center md:mx-auto md:gap-y-16">
       <!--CARD BOX--INTERNET-->
       <div
         class="bg-[#F4F2F2] max-w-[400px] lg:max-w-[275px] max-h-[361px] lg:max-h-[267px] pt-14 lg:pt-12 pl-6 pr-8 lg:px-5 pb-8 lg:pb-4 relative">
@@ -94,7 +109,7 @@
         <h3
           class="font-thin text-center text-[40px] lg:text-[30px] text-[#0F0508] leading-[45px] lg:leading-[34px] pb-8 lg:pb-5">
           Teléfono</h3>
-        <div class="pl-24 pr-16 lg:px-8">
+        <div class="px-16 lg:px-8">
           <div class="pb-10 lg:pb-4">
             <span class="text-[25px] lg:text-xl leading-[29px] lg:leading-[23px] text-[#0F0508]">Local:</span>
             <br>
@@ -127,7 +142,10 @@
           <span class="text-[25px] lg:text-xl leading-[29px] lg:leading-[23px] text-[#0F0508]">Washington, DC</span>
           <span class="text-[25px] lg:text-xl leading-[29px] lg:leading-[23px] text-[#0F0508]">20004, USA</span>
           <map name="The Mendoza Law" class="w-[299px] h-[61px] lg:w-[247px]">
-            <img src="../img/contacts/map.svg" alt="Map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.3474467641645!2d-77.02234488423842!3d38.893169279571275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b73acdd86791%3A0x20db6943fbd00df7!2s601%20Pennsylvania%20Avenue%20NW%2C%20Washington%2C%20DC%2020004%2C%20USA!5e0!3m2!1sen!2srs!4v1653326901266!5m2!1sen!2srs"
+              width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </map>
         </div>
 
@@ -139,11 +157,13 @@
   <!--SECTION CLIENTS -->
   <section class="max-w-[1920px] w-full">
     <!--SECTION CLIENTS -- TITLE -->
-    <h2 class="pb-10 font-baskervville font-normal text-6xl text-center text-[#CA7353]">Ayudando Clientes en Todos los
+    <h2
+      class="pb-10 font-baskervville font-normal text-6xl text-center lg:text-[40px] lg:leading-[53px] text-[#CA7353]">
+      Ayudando Clientes en Todos los
       Estados
     </h2>
     <!--MAIN CONTENT-->
-    <div class="bg-usa-map bg-center bg-no-repeat bg-auto h-[670px]">
+    <div class="bg-usa-map bg-center bg-no-repeat bg-contain h-[670px]">
       <div id="marqueeRight" class="overflow-x-hidden whitespace-nowrap">
         <!--SMALL ROUND PICS -->
         <div class="flex pb-[38px] pt-44">
@@ -279,11 +299,14 @@
       </div>
 
     </div>
-    <!--SECTION TESTIMONIALS -->
-    <div class="max-w-[1412px] w-full my-0 mx-auto pb-16 pt-32 font-helveticaThin">
-      <div class="flex justify-between mx-auto flex-wrap xl:justify-evenly">
+  </section>
+
+  <!--SECTION TESTIMONIALS -->
+  <section>
+    <div class="max-w-[1412px] my-0 mx-auto pb-16 pt-32 font-helveticaThin">
+      <div class="flex justify-between mx-auto lg:hidden">
         <!--TESTIMONIAL BOX-->
-        <div class="bg-[#F4F2F2] max-w-[400px] relative mx-4 md:my-12">
+        <div class="bg-[#F4F2F2] max-w-[400px] relative mx-4 px-8">
           <img class="absolute top-[-5%] left-[-3%]" src="../img/testimonials/quote.svg" alt="Quotation mark">
           <img class="h-[118px] w-[118px] absolute top-[-59px] left-[35%] border-4 border-[#CA7353] rounded-full"
             src="../img/testimonials/1.svg" alt="Testimonials rounded client image">
@@ -297,7 +320,7 @@
           </p>
         </div>
         <!--TESTIMONIAL BOX-->
-        <div class="bg-[#F4F2F2] max-w-[400px] relative mx-4 md:my-12">
+        <div class="bg-[#F4F2F2] max-w-[400px] relative lg:my-8">
           <img class="absolute top-[-5%] left-[-3%]" src="../img/testimonials/quote.svg" alt="Quotation mark">
           <img class="h-[118px] w-[118px] absolute top-[-59px] left-[35%] border-4 border-[#CA7353] rounded-full"
             src="../img/testimonials/2.svg" alt="Testimonials rounded client image">
@@ -311,7 +334,7 @@
           </p>
         </div>
         <!--TESTIMONIAL BOX-->
-        <div class="bg-[#F4F2F2] max-w-[400px] relative mx-4 lg:my-20 md:my-12">
+        <div class="bg-[#F4F2F2] max-w-[400px] relative mx-4 ">
           <img class="absolute top-[-5%] left-[-3%]" src="../img/testimonials/quote.svg" alt="Quotation mark">
           <img class="h-[118px] w-[118px] absolute top-[-59px] left-[35%] border-4 border-[#CA7353] rounded-full"
             src="../img/testimonials/3.svg" alt="Testimonials rounded client image">
@@ -325,9 +348,91 @@
           </p>
         </div>
       </div>
+
+      <!--SECTION TESTIMONIALS SLIDER -->
+      <div class="w-full lg:justify-center lg:items-center mx-auto tablet:mx-0 px-20 md:px-10 my-9 hidden lg:flex">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides  ">
+              <div class="px-5 lg:px-16 md:mx-0 sm:px-4 mt-20 h-80">
+                <li class="glide__slide">
+                  <!--TESTIMONIAL BOX-->
+                  <div class="bg-[#F4F2F2] max-w-[680px] w-full mx-auto relative">
+                    <img class="absolute top-[-5%] left-[-3%]" src="../img/testimonials/quote.svg" alt="Quotation mark">
+                    <img
+                      class="h-[118px] w-[118px] absolute top-[26%] left-[92%] md:top-[18%] tablet:left-[90%] border-4 border-lightOrange rounded-full mob:hidden"
+                      src="../img/testimonials/1.svg" alt="Testimonials rounded client image">
+                    <p
+                      class="pt-16 pb-[56px] px-14 md:pt-12 md:pb-7 md:pl-16 md:pr-16 text-left font-thin text-xl tablet:text-lg leading-[23px] tablet:leading-5 text-[#0F0508]">
+                      Quiero agradecer a Dios y a la abogada Maria Mendoza y su equipo que hicieron un excelente trabajo
+                      porque
+                      otros dos
+                      abogados no me ayudaron y con ella u su equipo, gracias a Dios, aquí están los resultados. Gracias
+                      …. si
+                      se
+                      puede con
+                      ella.
+                    </p>
+                  </div>
+                </li>
+              </div>
+
+              <li class="glide__slide">
+                <!--TESTIMONIAL BOX-->
+                <div class="bg-[#F4F2F2] max-w-[680px] relative">
+                  <img class="absolute top-[-5%] left-[-3%]" src="../img/testimonials/quote.svg" alt="Quotation mark">
+                  <img
+                    class="h-[118px] w-[118px] absolute top-[-59px] left-[35%] lg:top-[26%] lg:left-[92%] border-4 border-[#CA7353] rounded-full mob:hidden"
+                    src="../img/testimonials/2.svg" alt="Testimonials rounded client image">
+                  <p class="pt-16 px-9 pb-[56px] lg:px-14 text-left font-thin text-xl leading-[23px] text-[#0F0508]">
+                    Tuve muchas malas experiencias con los abogados, como creo que todos, roban el dinero y no te hacen
+                    el
+                    favor, pero la
+                    abogada Mendoza si cumplió. Tengo mi permiso de trabajo, mi tarjeta de seguro social, el permiso de
+                    viaje
+                    …
+                    muy bien la
+                    abogada … recomiendo mucho a la abogada Mendoza.
+                  </p>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <!--TESTIMONIAL BOX-->
+                <div class="bg-[#F4F2F2] max-w-[680px] relative">
+                  <img class="absolute top-[-5%] left-[-3%]" src="../img/testimonials/quote.svg" alt="Quotation mark">
+                  <img
+                    class="h-[118px] w-[118px] absolute top-[-59px] left-[35%] lg:top-[26%] lg:left-[92%] border-4 border-[#CA7353] rounded-full mob:hidden"
+                    src="../img/testimonials/3.svg" alt="Testimonials rounded client image">
+                  <p class="pt-16 px-9 pb-[56px] lg:px-14 text-left font-thin text-xl leading-[23px] text-[#0F0508]">
+                    La vida me cambió por completo, muchos planes aquí en Estados Unidos a lado de mi familia y con
+                    mejor
+                    trabajo, mucha
+                    tranquilidad aquí en este país muchísimas gracias a usted y a todo su equipo de trabajo 100%
+                    recomendable
+                    y
+                    muy
+                    agradecido con ustedes dios los bendiga hoy y siempre.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="slider__bullets glide__bullets hidden lg:flex lg:justify-center gap-2 mt-7"
+            data-glide-el="controls[nav]">
+            <button class="slider__bullet glide__bullet bg-gray-400 active:bg-darkOrange w-10 h-2"
+              data-glide-dir="=0"></button>
+            <button class="slider__bullet glide__bullet bg-gray-400 active:bg-darkOrange w-10 h-2"
+              data-glide-dir="=1"></button>
+            <button class="slider__bullet glide__bullet bg-gray-400 active:bg-darkOrange w-10 h-2"
+              data-glide-dir="=2"></button>
+          </div>
+        </div>
+
+      </div>
+
       <!--CALL TO ACTION BUTTON-->
       <div class="py-7 w-full my-0 flex items-center justify-around font-helveticaBold">
-        <a class="bg-[#CA7353] inline py-5 px-10 text-center text-[#FFF] font-bold text-xl leading-[23px] min-w-[212px] h-[60px] rounded-full hover:bg-[#CC4A1A]"
+        <a class="bg-[#CA7353] flex items-center py-5 px-10 text-center text-[#FFF] font-bold text-xl leading-[23px] min-w-[212px] h-[60px] lg:h-[50px] rounded-full hover:bg-[#CC4A1A]"
           href="#cta">+
           Ver más
           testimonios </a>
@@ -335,6 +440,7 @@
     </div>
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 </body>
 
 </html>

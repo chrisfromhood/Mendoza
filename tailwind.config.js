@@ -11,15 +11,31 @@ module.exports = {
       helveticaBold: ['helveticaBold', 'sans-serif'],
     },
 
-    extend: {},
+    extend: {
+      colors: {
+        darkGray: '#F7F7F7',
+        grayLight: '#D88C70',
+        lightOrange: '#CA7353',
+        darkOrange: '#cc4a1a',
+      },
+    },
     screens: {
-      'sm': { 'min': '360px' },
+      'sm': { 'max': '360px' },
       // => @media (min-width: 640px and max-width: 767px) { ... }
 
-      'md': { 'min': '700px' },
+      'mob': { 'max': '767px' },
+      // => @media (min-width: 640px and max-width: 767px) { ... }
+
+      'tablet': { 'max': '860px' },
+      // => @media (min-width: 640px and max-width: 767px) { ... }
+
+      'md': { 'max': '1023px' },
       // => @media (min-width: 768px and max-width: 1023px) { ... }
 
-      'lg': { 'min': '1024px', 'max': '1459px' },
+      'laptop': { 'max': '1223px' },
+      // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+      'lg': { 'max': '1459px' },
       // => @media (min-width: 1024px and max-width: 1279px) { ... }
     }
   },

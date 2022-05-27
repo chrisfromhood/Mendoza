@@ -1,4 +1,5 @@
 import marquee from 'https://cdn.jsdelivr.net/npm/vanilla-marquee/dist/vanilla-marquee.js';
+// import Glide from '@glidejs/glide';
 
 const scrollText = new marquee(document.getElementById('marqueeText'), {
   speed: 100,
@@ -27,3 +28,19 @@ const scrollLeft = new marquee(document.getElementById('marqueeLeft'), {
   duplicated: true,
   pauseOnHover: true,
 });
+
+
+
+const configuration = {
+  type: 'carousel',
+  perView: 1,
+  focusAt: 'center',
+  gap: 80,
+  autoplay: false,
+  breakpoints: {
+    1023: {
+      perView: 1,
+    },
+  },
+};
+new Glide('.glide', configuration).mount();
