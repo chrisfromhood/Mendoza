@@ -1026,9 +1026,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (max-width: 360px) {
+  .sm\:p-0 {
+    padding: 0px;
+  }
+
+  .sm\:p-2 {
+    padding: 0.5rem;
+  }
+
   .sm\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .sm\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
@@ -1048,6 +1061,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 0px;
   }
 
+  .tablet\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .tablet\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -1061,6 +1079,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (max-width: 1023px) {
   .md\:top-\[18\%\] {
     top: 18%;
+  }
+
+  .md\:m-0 {
+    margin: 0px;
   }
 
   .md\:mx-auto {
@@ -1110,6 +1132,31 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 2.5rem;
   }
 
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .md\:pt-12 {
     padding-top: 3rem;
   }
@@ -1124,6 +1171,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:pr-16 {
     padding-right: 4rem;
+  }
+
+  .md\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .md\:pb-6 {
+    padding-bottom: 1.5rem;
   }
 }
 
@@ -1245,6 +1300,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .lg\:pt-12 {
